@@ -11,7 +11,7 @@ const dashboard=() =>{
         {'HTML <a> Tag'}
         <p>
          The {'<a>'} tag defines a hyperlink, which is used to link from one page to another.
-         The most important attribute of the {'<a>'} element is the href attribute, which indicates the link's destination
+         The most important attribute of the {'<a>'} element is the href attribute, which indicates the links destination
         </p>
             <a>HTML Link </a>
         </div>
