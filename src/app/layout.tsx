@@ -1,3 +1,4 @@
+import Nav from "@/components/sections/Nav";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,13 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <body className={`${inter.className} min-h-screen flex flex-col justify-between`}>
       <header>
-        <nav className="flex bg-slate-600 text-white gap-5 text-centre py-3 px-3" >
-         <Link href="\Blog">Blog</Link>
-         <Link href="\Dashboard">Dashboard</Link>
-        </nav>
+        <Nav />
       </header>
-      <body className={inter.className}>{children}</body>
+      {children}
+      <footer className="flex bg-slate-600 text-white gap-5 text-centre py-3 px-3 "> This is footer </footer>
+      </body>
     </html>
   );
 }
